@@ -1,14 +1,12 @@
-import adapter from "@sveltejs/adapter-static";
+import adapter from '@sveltejs/adapter-static'; // Change this line
 
-/** @type {imdwqdport('@sveltejs/kit').Config} */
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
-  kit: {
-    adapter: adapter({
-      fallback: "404.html",
-    }),
-  },
+	kit: {
+		adapter: adapter({
+			fallback: '404.html' // Best for DigitalOcean static sites
+		})
+	}
 };
-
-config.paths = { base: process.argv.includes("dev") ? "" : "/aboutme-" };
 
 export default config;
