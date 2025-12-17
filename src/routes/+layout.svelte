@@ -4,7 +4,7 @@
     let { children } = $props();
 </script>
 
-export const prerender = true;
+
 <svelte:head>
     <link rel="icon" href={favicon} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
